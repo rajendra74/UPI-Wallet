@@ -1,0 +1,265 @@
+﻿
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../../Content/fonts/Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../fonts/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/Segoe UI Bold Italic.woff') format('woff');
+}
+
+body {
+    scrollbar-arrow-color: #C2BDBD;
+    scrollbar-highlight-color: rgb(173, 175, 179);
+    scrollbar-face-color: #969595;
+    scrollbar-darkshadow-color: rgb(173, 175, 179);
+    scrollbar-track-color: #C2BDBD;
+    /*scrollbar-color: #969595 #C2BDBD;*/
+}
+
+body {
+    padding-bottom: 0;
+    font-family: "Segoe UI", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 14px;
+    color: #393939;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #263238;
+    min-height: 9vh;
+    max-height: 10vh;
+}
+
+.sidebarLeft {
+    background-color: #263238;
+    height: 91vh;
+    width: 16%;
+    border-top: 1px solid #fff;
+    display: inline-block;
+}
+
+.rightsideMenu {
+    width: 84%;
+    float: right;
+}
+
+.sidebarLeft ul li {
+    margin-left: 7px;
+    color: #fff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.sidebarLeft a {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.navbrnad-logo {
+    width: 14%;
+    display: inline-block;
+}
+
+    .navbrnad-logo img {
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+.navright {
+    width: 70%;
+    float: right;
+    position: relative;
+}
+
+.userinfo i {
+    font-size: 33px;
+}
+
+.userinfo {
+    position: absolute;
+    right: 7px;
+    top: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card {
+    margin: 1%;
+    padding: 10px !important;
+}
+
+.heading {
+    font-size: 19px;
+    font-family: "Segoe UI bold";
+    padding-bottom: 6px;
+}
+.subheading {
+    font-size: 13px;
+    font-family: "Segoe UI bold";
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+
+
+}
+
+.mobilesIcons {
+    vertical-align: bottom;
+    color: #fff;
+
+}
+
+.divRecharge {
+    border: 1px solid #fff;
+    padding: 10px !important;
+    background-color: #37474f;
+    cursor: pointer
+}
+
+    .divRecharge a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.mt2 {
+    margin-top: 10px;
+}
+
+.p0 {
+    padding-left: 0px !important;
+}
+
+.rechargePannel {
+    border: 1px solid #9e9e9e;
+    padding: 23px !important;
+    height: 43vh;
+}
+
+.mainWrapper {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.bbps {
+    padding: 18px !important;
+    background-color: #37474f;
+    border-radius: 30px;
+}
+
+    .bbps span {
+        color: #fff !important
+    }
+
+    .bbps img {
+        width: 15%;
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+
+.membersID {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    max-width: 70%;
+    display: inline-block;
+    right: 0;
+}
+
+    .membersID ul li {
+        display: inline-block;
+        color: #fff;
+        padding: 10px;
+        border: 1px solid #fff;
+        /*border-radius: 34px;*/
+        margin: 0px 11px;
+        max-width: 29%;
+        width: 26%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+.navbrand {
+    position: relative;
+}
+
+.membersID ul {
+    margin: 8px;
+}
+
+table {
+    cursor: pointer
+}
+
+.profileimage {
+    border: 1px solid #cdcdcd;
+    height: 100px;
+    width: 165px;
+    overflow:hidden
+}
+.profileimage img {
+    width:100%
+}
+.error {
+    color:#e50a0a
+}
+.success {
+    color:#077402
+}
+
+.flexcroll {
+    overflow-y: auto;
+    height: 85vh;
+}
+
+.flexcroll {
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+
+  
+    .flexcroll::-webkit-scrollbar {
+        width: 6px;
+    }
+
+   
+    .flexcroll::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+
+    .flexcroll::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #393939;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }

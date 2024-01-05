@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="UPI_Wallet.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Assets/css/custom.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slide-out").sidenav();
+            $(".selectedTest").formSelect();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container-fluid">
+                <div class="header">
+                    <div class="navbrand">
+                        <div class="navbrnad-logo">
+                            <a href="#">
+                                <img src="Assets/images/logo.png">
+                            </a>
+                        </div>
+
+                        <div class="membersID">
+                            <ul>
+                                <li class="waves-effect waves-light blue-grey darken-4">User ID : 
+                                    <span>
+                                        <asp:Label ID="lblUserId"
+                                            runat="server"
+                                            Text=""
+                                        ></asp:Label>
+                                    </span>
+                                </li>
+                                <li class="waves-effect waves-light blue-grey darken-4">UPI Balance : 
+                                    <span>
+                                        <asp:Label ID="lblUpiBalance"
+                                            runat="server"
+                                            Text=""
+                                        ></asp:Label>
+                                    </span>
+                                </li>
+                                <li class="waves-effect waves-light blue-grey darken-4">Wallet Balance : 
+                                    <span>
+                                        <asp:Label ID="lblWalletBalance"
+                                            runat="server"
+                                            Text=""
+                                        ></asp:Label>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navright">
+                            <div class="userinfo">
+                                
+                                    <i class="material-icons right">person_pin</i>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body">
+                    <div class="sidebarLeft">
+                        <ul>
+                            <li><a href="Dashboard.aspx">Dashboard</a></li>
+                            <li><a href="Profile.aspx">Profile</a></li>
+                            <li><a href="Recharge.aspx">Recharge</a></li>
+                            <li><a href="RechargeHistory.aspx">Recharge History</a></li>
+                            <li><a href="BBPS.aspx">BBPS</a></li>
+                            <li><a href="Loan Payment.aspx">Loan Payment</a></li>
+                            <li><a href="Loan Payment Report.aspx">Loan Payment Reports</a></li>
+                            <li><a href="Aeps Wallet.aspx">Aesp Wallet</a></li>
+                            <li><a href="Aeps History.aspx">Aesp Wallet History</a></li>
+                            <li><a href="Withdrawal Panel.aspx">Withdrawal Panel</a></li>
+                            <li><a href="UPI.aspx">UPI</a></li>
+                            <li><a href="UPI History.aspx">UPI History</a></li>
+                            <li><a href="Offline Services.aspx">Offline Services</a></li>
+                            <li><a href="LoginPage.aspx">Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rightsideMenu">
+
+                        <div class="card flexcroll">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
