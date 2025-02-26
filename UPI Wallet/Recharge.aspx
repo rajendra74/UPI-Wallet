@@ -41,15 +41,8 @@
                 $(".prepaid").hide();
             });
 
-            $(".landlinex").click(function () {
-                $(".postpaid").hide();
-                $(".DTH").hide();
-                $(".dataCard").hide();
-                $(".prepaid").hide();
             });
 
-        });
-            
     </script>
 
 </asp:Content>
@@ -93,14 +86,7 @@
                     </span>
                 </div>
 
-                <div class="col s12 m9 divRecharge mt2 landlinex">
-                    <span>
-                        <i class="material-icons mobilesIcons">phone_iphone</i>
-                        <a href="#">LandLine</a>
-                    </span>
                 </div>
-
-            </div>
 
             <div class="col s8 rechargePannel prepaid">
 
@@ -108,8 +94,11 @@
 
                     <div class="input-field col s6">
        
-                        <input type="text" id="autocomplete-input" >
-                        <label for="autocomplete-input">Prepaid Mobile Number</label>
+                        <asp:TextBox ID="txtPreNumber" 
+                            runat="server"    
+                        ></asp:TextBox>
+                        <label for="txtPreNumber">Prepaid Mobile Number</label>
+
                     </div>
 
                     <div class="input-field col s6">

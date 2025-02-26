@@ -178,35 +178,6 @@
 
     </div>
 
-    <div class="row">
-
-        <div class="input-field col s3">
-
-            <asp:Button ID="btnEdit"
-                runat="server"
-                Text="Edit"
-                Width="100px"
-                Height="40px"
-                BackColor="#666666"
-                Font-Size="18px"
-                BorderColor="HotTrack"
-                OnClick="btnEdit_Click"
-            />
-            <%--CssClass="waves-effect waves-light blue-grey darken-2 btn" --%>
-            &nbsp
-            <asp:Button ID="btnUpdate"
-                runat="server"
-                Text="Update"
-                Width="100px"
-                Height="40px"
-                BackColor="#666666"
-                Font-Size="18px"
-                BorderColor="HotTrack"
-                OnClick="btnUpdate_Click"
-            />
-            <%--CssClass="waves-effect waves-light blue-grey darken-2 btn" --%>
-        </div>
-
     </div>
         
   </div>
